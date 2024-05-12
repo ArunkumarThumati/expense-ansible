@@ -2,8 +2,12 @@
   become: yes
   hosts: backend
   vars:
+<<<<<<< HEAD
 
    
+=======
+  
+>>>>>>> 7ba1628735da5a7c5960558320553287bfd394b9
   tasks:
   - name: disable default nodejs
     ansible.builtin.command: dnf module disable nodejs -y
@@ -20,6 +24,7 @@
     ansible.builtin.user:
       name: expense
 
+<<<<<<< HEAD
   - name: create a directory
     ansible.builtin.file:
      path: /app
@@ -38,3 +43,14 @@
 
 
  
+=======
+
+
+ 
+
+ 
+
+ 
+      
+  
+>>>>>>> 7ba1628735da5a7c5960558320553287bfd394b9
