@@ -1,4 +1,11 @@
-<<<<<<< HEAD
-=======
+[Unit]
+Description = Backend Service
 
->>>>>>> 7ba1628735da5a7c5960558320553287bfd394b9
+[Service]
+User=expense
+Environment=DB_HOST="db.daredevops.online"
+ExecStart=/bin/node /app/index.js
+SyslogIdentifier=backend
+
+[Install]
+WantedBy=multi-user.target
